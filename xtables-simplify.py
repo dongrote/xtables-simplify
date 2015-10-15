@@ -21,7 +21,7 @@ class PrimaryChain(Chain):
         return '%s %s -- %r' % (self.name, self.policy, self.rules)
 
 class XTable(object):
-    reserved_targets = ('ACCEPT', 'DROP', 'RETURN', 'DNAT', 'CONNMARK', 'NFQUEUE', 'REDIRECT', 'REJECT', ' ', 'TCPMSS')
+    reserved_targets = ('ACCEPT', 'DROP', 'RETURN', 'DNAT', 'CONNMARK', 'NFQUEUE', 'REDIRECT', 'REJECT', ' ', 'TCPMSS', 'NOTRACK')
     def __init__(self, primary_chains=[], extension_chains=[]):
         self.primary_chains = primary_chains
         self.extension_chains = extension_chains
